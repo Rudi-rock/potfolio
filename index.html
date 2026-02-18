@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RUDRA — Portfolio // Vice City Edition</title>
+  <meta name="description" content="Rudra's creative portfolio — a GTA VI Vice City inspired developer showcase." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- LOADING SCREEN                                     -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <div id="loading-screen">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <span class="loader-letter">R</span>
+        <span class="loader-star">★</span>
+      </div>
+      <div class="loader-bar-track">
+        <div class="loader-bar-fill" id="loader-fill"></div>
+      </div>
+      <p class="loader-text">LOADING VICE CITY...</p>
+    </div>
+    <div class="scanlines"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- NAVIGATION                                         -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <nav id="main-nav" class="glass-nav">
+    <div class="nav-logo">R<span class="nav-star">★</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link active" data-section="hero">HOME</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">PROFILE</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">MISSIONS</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">STATS</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">RADIO</a></li>
+    </ul>
+    <div class="nav-hamburger" id="nav-hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- HERO SECTION                                       -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <section id="hero" class="section hero-section">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-content">
+      <h1 class="hero-title glitch" data-text="RUDRA">RUDRA</h1>
+      <div class="hero-subtitle-wrapper">
+        <span class="hero-subtitle" id="typed-text"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-neon">VIEW MISSIONS</a>
+        <a href="#contact" class="btn btn-outline">TUNE IN</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-arrow"></div>
+      <span>SCROLL DOWN</span>
+    </div>
+    <!-- Palm tree silhouettes -->
+    <div class="palm-left"></div>
+    <div class="palm-right"></div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- ABOUT — "WANTED POSTER"                            -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <section id="about" class="section about-section">
+    <div class="section-header">
+      <span class="section-tag">// PROFILE</span>
+      <h2 class="section-title neon-text">WANTED</h2>
+    </div>
+
+    <div class="wanted-card glass-card">
+      <div class="wanted-top">
+        <div class="mugshot">
+          <div class="mugshot-placeholder">
+            <img src="/rudra.png" alt="Rudra Pratap Singh" class="mugshot-img" />
+          </div>
+          <div class="mugshot-glow"></div>
+        </div>
+        <div class="wanted-info">
+          <h3 class="wanted-name">RUDRA PRATAP SINGH</h3>
+          <p class="wanted-alias">AKA: The Builder</p>
+          <p class="wanted-desc">
+            Computer Science Undergraduate. SRMIST. Building decentralized systems and AI models.
+            Black Belt discipline. Focused on craft and execution.
+          </p>
+        </div>
+      </div>
+      <div class="wanted-stats">
+        <div class="wanted-stat">
+          <span class="stat-label">REWARD</span>
+          <span class="stat-value neon-pink">UNLISTED</span>
+        </div>
+        <div class="wanted-stat">
+          <span class="stat-label">CLASS</span>
+          <span class="stat-value neon-cyan">CSE CORE</span>
+        </div>
+        <div class="wanted-stat">
+          <span class="stat-label">RANK</span>
+          <span class="stat-value neon-green">BLACK BELT</span>
+        </div>
+        <div class="wanted-stat">
+          <span class="stat-label">STATUS</span>
+          <span class="stat-value neon-orange">OPERATIONAL</span>
+        </div>
+      </div>
+      <div class="wanted-stamp">WANTED</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- PROJECTS — "MISSIONS"                              -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <section id="projects" class="section projects-section">
+    <div class="section-header">
+      <span class="section-tag">// OPERATIONS</span>
+      <h2 class="section-title neon-text">ACTIVE MISSIONS</h2>
+    </div>
+
+    <div class="missions-grid">
+
+      <!-- Mission 1 -->
+      <a href="https://www.linkedin.com/posts/rudra-srm_hackathon-cybersecurity-srmist-activity-7384473440692568064-GmYW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFIj3X8BmpW-Gk7Q0gHmzdhdHI_vNeS6uRs"
+        target="_blank" class="mission-card glass-card" data-anim="fade-up">
+        <div class="mission-status completed">MISSION PASSED</div>
+        <h3 class="mission-name">CryptoSolve</h3>
+        <p class="mission-brief">🥇 1st Place at Fintech App Expo. Built a decentralized application (DApp) for secure
+          transactions.</p>
+        <div class="mission-meta">
+          <div class="mission-difficulty">
+            <span class="meta-label">DIFFICULTY</span>
+            <span class="stars">★★★★★</span>
+          </div>
+          <div class="mission-reward">
+            <span class="meta-label">TECH</span>
+            <span class="tech-tags">
+              <span class="tag">Blockchain</span>
+              <span class="tag">DApp</span>
+              <span class="tag">Web3</span>
+            </span>
+          </div>
+        </div>
+        <div class="mission-hover-glow"></div>
+      </a>
+
+      <!-- Mission 2 -->
+      <a href="https://github.com/Rudi-rock/no-drop" target="_blank" class="mission-card glass-card"
+        data-anim="fade-up">
+        <div class="mission-status in-progress">RECONNAISSANCE</div>
+        <h3 class="mission-name">Tamizhan Skills</h3>
+        <p class="mission-brief">AI for Education: Early-warning academic failure prediction using revision gaps and
+          hesitation patterns.</p>
+        <div class="mission-meta">
+          <div class="mission-difficulty">
+            <span class="meta-label">DIFFICULTY</span>
+            <span class="stars">★★★★☆</span>
+          </div>
+          <div class="mission-reward">
+            <span class="meta-label">TECH</span>
+            <span class="tech-tags">
+              <span class="tag">AI/ML</span>
+              <span class="tag">Python</span>
+              <span class="tag">Analytics</span>
+            </span>
+          </div>
+        </div>
+        <div class="mission-hover-glow"></div>
+      </a>
+
+      <!-- Mission 3 -->
+      <a href="https://github.com/Rudi-rock/POLYAI" target="_blank" class="mission-card glass-card" data-anim="fade-up">
+        <div class="mission-status in-progress">PLANNING</div>
+        <h3 class="mission-name">PolyMind Infinity</h3>
+        <p class="mission-brief">Multi-AI orchestration platform pitched at HIZE 2026 and UNBUILT Ideathon. The future
+          of AI interaction.</p>
+        <div class="mission-meta">
+          <div class="mission-difficulty">
+            <span class="meta-label">DIFFICULTY</span>
+            <span class="stars">★★★★★</span>
+          </div>
+          <div class="mission-reward">
+            <span class="meta-label">TECH</span>
+            <span class="tech-tags">
+              <span class="tag">AI</span>
+              <span class="tag">System Design</span>
+              <span class="tag">Orchestration</span>
+            </span>
+          </div>
+        </div>
+        <div class="mission-hover-glow"></div>
+      </a>
+
+      <!-- Mission 4 -->
+      <a href="https://github.com/Rudi-rock" target="_blank" class="mission-card glass-card" data-anim="fade-up">
+        <div class="mission-status ongoing">CURRENT OP</div>
+        <h3 class="mission-name">Vice City Portfolio</h3>
+        <p class="mission-brief">This very website. A GTA VI-inspired interactive experience pushing web design limits
+          with neon aesthetics.</p>
+        <div class="mission-meta">
+          <div class="mission-difficulty">
+            <span class="meta-label">DIFFICULTY</span>
+            <span class="stars">★★★☆☆</span>
+          </div>
+          <div class="mission-reward">
+            <span class="meta-label">TECH</span>
+            <span class="tech-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+            </span>
+          </div>
+        </div>
+        <div class="mission-hover-glow"></div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- SKILLS — "CHARACTER STATS"                         -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <section id="skills" class="section skills-section">
+    <div class="section-header">
+      <span class="section-tag">// ABILITIES</span>
+      <h2 class="section-title neon-text">CHARACTER STATS</h2>
+    </div>
+
+    <div class="stats-container">
+      <div class="stat-group">
+        <h4 class="stat-group-title neon-cyan">CORE & LANGUAGES</h4>
+        <div class="stat-bar" data-skill="Python" data-percent="85" data-color="var(--neon-cyan)">
+          <div class="stat-info"><span class="stat-name">Python</span><span class="stat-percent">85%</span></div>
+          <div class="bar-track">
+            <div class="bar-fill"></div>
+          </div>
+        </div>
+        <div class="stat-bar" data-skill="Java 21" data-percent="70" data-color="var(--neon-cyan)">
+          <div class="stat-info"><span class="stat-name">Java 21</span><span class="stat-percent">70%</span></div>
+          <div class="bar-track">
+            <div class="bar-fill"></div>
+          </div>
+        </div>
+        <div class="stat-bar" data-skill="C / Dart" data-percent="65" data-color="var(--neon-cyan)">
+          <div class="stat-info"><span class="stat-name">C / Dart</span><span class="stat-percent">65%</span></div>
+          <div class="bar-track">
+            <div class="bar-fill"></div>
+          </div>
+        </div>
+        <div class="stat-bar" data-skill="DSA" data-percent="75" data-color="var(--neon-cyan)">
+          <div class="stat-info"><span class="stat-name">DSA</span><span class="stat-percent">75%</span></div>
+          <div class="bar-track">
+            <div class="bar-fill"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-group">
+        <h4 class="stat-group-title neon-pink">DEVELOPMENT</h4>
+        <div class="stat-bar" data-skill="Flutter" data-percent="80" data-color="var(--neon-pink)">
+          <div class="stat-info"><span class="stat-name">Flutter</span><span class="stat-percent">80%</span></div>
+          <div class="bar-track">
+            <div class="bar-fill"></div>
+          </div>
+        </div>
+        <div class="stat-bar" data-skill="MERN Stack" data-percent="60" data-color="var(--neon-pink)">
+          <div class="stat-info"><span class="stat-name">MERN Stack</span><span class="stat-percent">60%</span></div>
+          <div class="bar-track">
+            <div class="bar-fill"></div>
+          </div>
+        </div>
+        <div class="stat-bar" data-skill="Firebase" data-percent="75" data-color="var(--neon-pink)">
+          <div class="stat-info"><span class="stat-name">Firebase</span><span class="stat-percent">75%</span></div>
+          <div class="bar-track">
+            <div class="bar-fill"></div>
+          </div>
+        </div>
+        <div class="stat-bar" data-skill="TensorFlow Lite" data-percent="50" data-color="var(--neon-pink)">
+          <div class="stat-info"><span class="stat-name">TensorFlow Lite</span><span class="stat-percent">50%</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-group">
+        <h4 class="stat-group-title neon-green">TOOLS & DATA</h4>
+        <div class="stat-bar" data-skill="Git / GitHub" data-percent="82" data-color="var(--neon-green)">
+          <div class="stat-info"><span class="stat-name">Git / GitHub</span><span class="stat-percent">82%</span></div>
+          <div class="bar-track">
+            <div class="bar-fill"></div>
+          </div>
+        </div>
+        <div class="stat-bar" data-skill="Pandas / NumPy" data-percent="65" data-color="var(--neon-green)">
+          <div class="stat-info"><span class="stat-name">Pandas / NumPy</span><span class="stat-percent">65%</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill"></div>
+          </div>
+        </div>
+        <div class="stat-bar" data-skill="VS Code" data-percent="90" data-color="var(--neon-green)">
+          <div class="stat-info"><span class="stat-name">VS Code</span><span class="stat-percent">90%</span></div>
+          <div class="bar-track">
+            <div class="bar-fill"></div>
+          </div>
+        </div>
+        <div class="stat-bar" data-skill="Open Source" data-percent="40" data-color="var(--neon-green)">
+          <div class="stat-info"><span class="stat-name">Open Source</span><span class="stat-percent">40%</span></div>
+          <div class="bar-track">
+            <div class="bar-fill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- CONTACT — "RADIO STATION"                          -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <section id="contact" class="section contact-section">
+    <div class="section-header">
+      <span class="section-tag">// FREQUENCIES</span>
+      <h2 class="section-title neon-text">TUNE IN</h2>
+    </div>
+
+    <p class="contact-subtitle">Select a frequency to connect</p>
+
+    <div class="radio-grid">
+      <a href="mailto:rs9412@srmist.edu.in" class="radio-card glass-card" data-anim="fade-up">
+        <div class="radio-freq">FM 101.1</div>
+        <div class="radio-icon">📧</div>
+        <div class="radio-name">EMAIL</div>
+        <div class="radio-static"></div>
+      </a>
+      <a href="https://github.com/Rudi-rock" target="_blank" class="radio-card glass-card" data-anim="fade-up">
+        <div class="radio-freq">FM 102.3</div>
+        <div class="radio-icon">🐙</div>
+        <div class="radio-name">GITHUB</div>
+        <div class="radio-static"></div>
+      </a>
+      <a href="https://www.linkedin.com/in/rudra-srm" target="_blank" class="radio-card glass-card" data-anim="fade-up">
+        <div class="radio-freq">FM 103.7</div>
+        <div class="radio-icon">💼</div>
+        <div class="radio-name">LINKEDIN</div>
+        <div class="radio-static"></div>
+      </a>
+      <a href="https://instagram.com/its_Rudra.s" target="_blank" class="radio-card glass-card" data-anim="fade-up">
+        <div class="radio-freq">FM 104.9</div>
+        <div class="radio-icon">📸</div>
+        <div class="radio-name">INSTAGRAM</div>
+        <div class="radio-static"></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- FOOTER                                             -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">R<span class="nav-star">★</span></div>
+      <p class="footer-copy">© 2026 RUDRA — Vice City Edition. All rights reserved.</p>
+      <p class="footer-tagline">Engineered in Vice City.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
